@@ -20,6 +20,6 @@ class TweetsController < ApplicationController
 
   private
   def tweet_params
-    params.require(:tweet).permit(:title, :youtube_url, :text).merge(user_id: current_user.id)
+    params.require(:tweet).permit(:title, :youtube_url, :text)
   end
 end
