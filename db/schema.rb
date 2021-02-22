@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 2021_02_22_093020) do
 
   create_table "tweets", charset: "utf8", force: :cascade do |t|
-    t.text "title", null: false
-    t.string "youtube_url", null: false
+    t.string "title", default: "", null: false
+    t.string "youtube_url", default: "", null: false
     t.text "text", null: false
     t.string "user_id"
     t.string "comment_id"
